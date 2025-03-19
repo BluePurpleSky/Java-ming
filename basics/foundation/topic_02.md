@@ -1,11 +1,11 @@
 
 ### Java Strings are objects that contain a sequence of characters and can be created using the new operator or string literals.
-Strings can be represented internally using bytes (UTF-16) or compact strings (1 byte per character for ISO-8859-1/Latin-1 characters).
+### Strings can be represented internally using bytes (UTF-16) or compact strings (1 byte per character for ISO-8859-1/Latin-1 characters).
 ----------
 Java provides various methods for searching, comparing, and manipulating strings, such as indexOf(), matches(), startsWith(), and replace().
 
 
-
+---------
 ### String Representation: 
 Java Strings are represented internally as a sequence of characters, using either 2 bytes per character (UTF-16) or 1 byte per character (compact strings) if the string only contains ISO-8859-1/Latin-1 characters.
 
@@ -29,7 +29,8 @@ The webpage also covers Java text blocks, which are a feature introduced in Java
 -----
 
 
-## <span style="color: #4C996B;"> What's Happening with String Concatenation?</span>
+ <span style="color: #4C996B;">## What's Happening with String Concatenation?
+ </span>
 When you try to join or combine (concatenate) two Strings together in Java, the process is not as simple as just adding them. Behind the scenes, Java does a bit more work.
 
 ### Basic String Concatenation:
