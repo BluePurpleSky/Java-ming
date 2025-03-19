@@ -35,7 +35,7 @@ The webpage also covers Java text blocks, which are a feature introduced in Java
 -----
 
 
-Sure! Let's break this down in simple terms.
+
 
 ## <span style="color: #4C996B;"> What's Happening with String Concatenation?</span>
 When you try to join or combine (concatenate) two Strings together in Java, the process is not as simple as just adding them. Behind the scenes, Java does a bit more work.
@@ -100,3 +100,38 @@ Now, instead of creating a new StringBuilder and copying the characters every ti
 ### In Summary:
 - **Without optimization**: In a loop, creating a new `StringBuilder` and copying characters every time makes the process slower as the `result` grows.
 - **With optimization**: Reusing the same `StringBuilder` makes the concatenation much faster because we avoid the unnecessary copying of characters.
+
+
+-----
+Sure! Let's break it down:
+
+### What is `matches()`?
+The `matches()` method in Java is used to check if a string follows a certain pattern, called a **regular expression**. A regular expression (regex) is like a special search pattern that defines a set of rules to match text.
+
+### How it works:
+- The `matches()` method takes a **regular expression** (regex) as its input and checks if the string **completely matches** that pattern.
+- If the string matches the pattern, `matches()` returns **`true`**. Otherwise, it returns **`false`**.
+
+### Example:
+Let’s look at your example:
+
+```java
+String text = "one two three two one";
+boolean matches = text.matches(".*two.*");
+```
+
+### Explanation:
+- `text.matches(".*two.*")` checks if the string `"one two three two one"` contains the word **"two"**.
+- The regular expression `".*two.*"` can be broken down like this:
+  - `.*`: This part means "any sequence of characters" (it could be anything before or after the word "two").
+  - `two`: This is the exact word you're looking for.
+  - `.*`: This part again means "any sequence of characters" after the word "two".
+  
+So, the pattern `".*two.*"` is looking for the word "two" **anywhere** in the string. If it finds "two", it returns `true`. If it doesn't, it returns `false`.
+
+### In this case:
+- The string `"one two three two one"` contains the word "two" twice, so the `matches()` method will return **`true`**.
+
+### Summary:
+- **`matches()`** checks if a string fits a pattern defined by a regular expression.
+- In the example, it checks if the word "two" appears anywhere in the string `"one two three two one"`. Since it does, it returns `true`.
