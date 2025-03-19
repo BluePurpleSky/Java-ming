@@ -37,7 +37,7 @@ The webpage also covers Java text blocks, which are a feature introduced in Java
 
 Sure! Let's break this down in simple terms.
 
-## <span style="color: #4C996B;">What's Happening with String Concatenation?</span>
+## <span style="color: #4C996B;"> What's Happening with String Concatenation?</span>
 When you try to join or combine (concatenate) two Strings together in Java, the process is not as simple as just adding them. Behind the scenes, Java does a bit more work.
 
 ### Basic String Concatenation:
