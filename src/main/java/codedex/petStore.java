@@ -1,27 +1,27 @@
+import java.util.Scanner;
 
-
-publi602115c class petStore{
+public class petStore {
     public static void main(String[] args) {
-        boolean isCatOwner = true;
-        System.out.println("Welcome to Petstore");
-        System.out.println("Please let us know if are a cat owner: ");
-        System.out.println("Press 'Y' if you are, else select 'N' ");
+        // Prompt the user
+        System.out.println("We have an offer for you!");
+        System.out.println("Are you a cat owner? Y or N");
 
-        Scanner sc = new Scanner(System.in);
-        char input = sc.next()Line.toLowerCase();
-        if (isCatOwner = input.equals('y')) {
-            isCatOwner = true;
+        Scanner sc = new Scanner(System.in); // Create a Scanner object to read input
+        String result = sc.nextLine().trim().toLowerCase(); // Read input and normalize it
+
+        // Set isCatOwner based on the user's response
+        boolean isCatOwner = result.equals("y");
+
+        // Display appropriate messages
+        if (isCatOwner) {
             System.out.println("20% off select cat items with code MEOW2025");
-        }
-        else {
-            isCatOwner = false;
+        } else {
             System.out.println("Welcome to the Pets Pets Pets store!");
         }
 
-
+        sc.close(); // Close the scanner
     }
 }
-
 /*
 The pet store wants to send you a coupon if you're a cat owner!
 
