@@ -1,5 +1,5 @@
 ## "Variable Scope in Java." 
- riable scope refers to where in a program a variable can be accessed or used. There are different types of scopes in Java:
+Variable scope refers to where in a program a variable can be accessed or used. There are different types of scopes in Java:
 
 1. **Local Scope**: Variables defined inside a method, constructor, or block are only accessible within that method or block.
 2. **Instance Scope**: Variables defined inside a class but outside any method (also called instance variables) are accessible throughout the class and by objects of the class.
